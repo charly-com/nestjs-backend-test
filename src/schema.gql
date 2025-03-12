@@ -1,0 +1,27 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+input BiometricLoginInput {
+  biometricKey: String!
+}
+
+input LoginInput {
+  email: String!
+  password: String!
+}
+
+type Mutation {
+  biometricLogin(input: BiometricLoginInput!): String!
+  login(input: LoginInput!): String!
+  register(input: RegisterInput!): String!
+}
+
+type Query {
+  me: String!
+}
+
+input RegisterInput {
+  email: String!
+  password: String!
+}
